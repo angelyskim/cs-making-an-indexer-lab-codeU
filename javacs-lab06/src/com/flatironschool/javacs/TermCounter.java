@@ -37,7 +37,13 @@ public class TermCounter {
 	 */
 	public int size() {
         // TODO: fill this in.
-		return -1;
+        int size = 0;
+        
+		for (int value : map.values()) {
+			size += value;
+		}
+
+		return size;
 	}
 
 	/**
